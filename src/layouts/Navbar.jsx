@@ -2,64 +2,38 @@ import React from 'react'
 
 export const Navbar = () => {
     return (<>
-        <div class="navigation">
-    <div class="logo">
-        <h1><a href="index.html">Smart</a></h1>
-    </div>
-    <div class="top-nav">
-        <nav class="navbar navbar-default">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-                <nav class="menu menu--sebastian">
-                    <ul class="nav navbar-nav menu__list">
-                        <li class="menu__item menu__item--current"><a href="index.html" class="menu__link">Home</a></li>
-                        <li class="menu__item"><a href="index.html" class="menu__link">About Us</a></li>
-                        <li class="menu__item"><a href="index.html" class="menu__link">Blog</a></li>
-                        <li class="menu__item"><a href="index.html" class="menu__link">Mail Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </nav>
-    </div>
-
-    <div class="search">
-        <input class="search_box" type="checkbox" id="search_box" />
-            <label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
-            <div class="search_form">
-                <form action="#" method="post">
-                    <input type="text" name="Search" placeholder="Search..." />
-                    <input type="submit" value=" " />
-                    </form>
-            </div>
-    </div>
-    <div class="social-icons-men">
-        <div class="social-icons">
-            <ul>
-                <li><a href="#" class="facebook"></a></li>
-                <li><a href="#" class="twitter"></a></li>
-                <li><a href="#" class="instagram"></a></li>
-            </ul>
-        </div>
-        <div class="men">
-            <div id="dd" class="wrapper-dropdown-2" tabindex="1"><span><a href="#" class="men1"></a></span>
-                <ul class="dropdown">
-
-                    <li><a href="#">View Profile </a></li>
-                    <li><a href="#">Lists</a></li>
-                    <li><a href="#">Log Out</a></li>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container px-5">
+            <a className="navbar-brand" href="index.html">Start Bootstrap</a>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li className="nav-item"><a className="nav-link" href="index.html">Home</a></li>
+                    <li className="nav-item"><a className="nav-link" href="about.html">About</a></li>
+                    <li className="nav-item"><a className="nav-link" href="contact.html">Contact</a></li>
+                    <li className="nav-item"><a className="nav-link" href="pricing.html">Pricing</a></li>
+                    <li className="nav-item"><a className="nav-link" href="faq.html">FAQ</a></li>
+                    <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                        <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                            <li><a className="dropdown-item" href="blog-home.html">Blog Home</a></li>
+                            <li><a className="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                        </ul>
+                    </li>
+                    <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                        <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                            <li><a className="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
+                            <li><a className="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="clearfix"> </div>
-    </div>
-    <div class="clearfix"> </div>
-</div>
+    </nav>
     </>)
 }
